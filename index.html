@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>郑家依 · 作品集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Assistant:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=Smiley+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 语言选择页 -->
+<div class="lang-gate" id="lg">
+  <div class="lg-label">Select Language</div>
+  <div class="lg-title">郑家依</div>
+  <div class="lg-sub">Portfolio · 2021 / 2026</div>
+  <div class="lg-opts">
+    <button class="lg-btn" onclick="go('zh')">中文<small>Chinese</small></button>
+    <button class="lg-btn" onclick="go('en')">English<small>英语</small></button>
+    <button class="lg-btn" onclick="go('es')">Español<small>西班牙语</small></button>
+  </div>
+</div>
+
+<div class="prog" id="prog"></div>
+
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <div class="nav-n" data-t="nav_n">郑家依 <span>Jiayi Zheng</span></div>
+  <ul class="nav-l">
+    <li><a href="#c1" data-t="nav_c1">i. 产品</a></li>
+    <li><a href="#c2" data-t="nav_c2">ii. 增长</a></li>
+    <li><a href="#c3" data-t="nav_c3">iii. 内容</a></li>
+    <li><a href="#c4" data-t="nav_c4">iv. 跨文化</a></li>
+    <li><a href="#ft" data-t="nav_ft">联系</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero hero-split">
+  <div class="hero-split-img">
+    <img src="images/hero.jpg" alt="">
+    <div class="bubbles">
+      <div class="steam s1"></div><div class="steam s2"></div><div class="steam s3"></div>
+      <div class="steam s4"></div><div class="steam s5"></div><div class="steam s6"></div>
+      <div class="steam s7"></div><div class="steam s8"></div><div class="steam s9"></div>
+
+      <div class="bubble b1">
+        <div class="bubble-num">i.</div>
+        <div class="bubble-title" data-t="bub1_t">产品能力</div>
+        <div class="bubble-desc" data-t="bub1_d">从数据里看到<br>一个具体的人</div>
+      </div>
+      <div class="bubble b2">
+        <div class="bubble-num">ii.</div>
+        <div class="bubble-title" data-t="bub2_t">增长能力</div>
+        <div class="bubble-desc" data-t="bub2_d">让对的东西<br>出现在对的人面前</div>
+      </div>
+      <div class="bubble b3">
+        <div class="bubble-num">iii.</div>
+        <div class="bubble-title" data-t="bub3_t">内容能力</div>
+        <div class="bubble-desc" data-t="bub3_d">让人从"不关我事"<br>到"我想要"</div>
+      </div>
+      <div class="bubble b4">
+        <div class="bubble-num">iv.</div>
+        <div class="bubble-title" data-t="bub4_t">跨文化能力</div>
+        <div class="bubble-desc" data-t="bub4_d">在陌生的语境里<br>建立连接</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-split-right">
+    <div class="hero-over">
+      <div class="hero-over-line"></div>
+      <span>Portfolio · 2021 / 2026</span>
+    </div>
+
+    <div class="hero-title-group">
+      <h1 class="hero-split-title" data-t="hero_title">HI! I'M <em>Jiayi Zheng</em></h1>
+      <div class="hero-split-name-cn" data-t="hero_cn">郑家依</div>
+    </div>
+
+    <div class="hero-split-sub" data-t="hero_sub">
+      看到具体的人，<br>
+      连接具体的人，<em>打动</em>具体的人。
+    </div>
+
+    <div class="hero-meta">
+      <div class="hero-sec">
+        <div class="hero-sec-lb" data-t="sec01_lb">/ 01 · 我是谁</div>
+        <div class="hero-sec-tx" data-t="sec01_tx">西班牙语专业出身，3 年消费品经验。巴塞罗那在住。</div>
+      </div>
+      <div class="hero-sec">
+        <div class="hero-sec-lb" data-t="sec02_lb">/ 02 · 我在做</div>
+        <div class="hero-sec-tx" data-t="sec02_tx">产品开发 · 电商增长 · 内容运营 · 跨文化实践</div>
+      </div>
+      <div class="hero-sec">
+        <div class="hero-sec-lb" data-t="sec03_lb">/ 03 · 关键词</div>
+        <div class="hero-tags-tiny">
+          <span data-t="kw1">从0到1搭建</span>
+          <span data-t="kw2">数据驱动决策</span>
+          <span data-t="kw3">审美与人文底色</span>
+          <span data-t="kw4">西语专八 · DELE C1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDEX -->
+<div class="idx rv">
+  <div class="idx-item">
+    <div class="idx-num">i.</div>
+    <div class="idx-t" data-t="idx1_t">产品能力</div>
+    <div class="idx-d" data-t="idx1_d">用户洞察 · 需求定义<br>竞品分析 · 从0到1</div>
+  </div>
+  <div class="idx-item">
+    <div class="idx-num">ii.</div>
+    <div class="idx-t" data-t="idx2_t">增长能力</div>
+    <div class="idx-d" data-t="idx2_d">天猫运营 · 活动策划<br>短视频电商 · 数据复盘</div>
+  </div>
+  <div class="idx-item">
+    <div class="idx-num">iii.</div>
+    <div class="idx-t" data-t="idx3_t">内容能力</div>
+    <div class="idx-d" data-t="idx3_d">选题策划 · 小红书爆款<br>品牌叙事 · 公众号运营</div>
+  </div>
+  <div class="idx-item">
+    <div class="idx-num">iv.</div>
+    <div class="idx-t" data-t="idx4_t">跨文化能力</div>
+    <div class="idx-d" data-t="idx4_d">西语内容 · 跨文化选题<br>海外洞察 · 在地社群</div>
+  </div>
+</div>
+
+<!-- ===== 01 产品能力 ===== -->
+<section class="chapter-wrap">
+  <div class="ch rv" id="c1">
+    <div class="ch-expand">
+      <div class="ch-tag">Chapter One</div>
+      <div class="ch-meta"><div class="ch-num">i.</div><div class="ch-title" data-t="ch1_title">产品能力</div></div>
+      <div class="ch-sub" data-t="ch1_sub">从数据里<span class="hi">看到一个具体的人</span>。</div>
+      <div class="ch-rule"></div>
+    </div>
+    <div class="ch-mini">
+      <span class="ch-mini-num">i.</span>
+      <span class="ch-mini-title" data-t="ch1_title">产品能力</span>
+      <span class="ch-mini-sub" data-t="ch1_sub">从数据里<span class="hi">看到一个具体的人</span></span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <!-- 贵州红酸汤 -->
+    <div class="project rv">
+      <div class="proj-label">Product Development</div>
+      <div class="proj-name" data-t="p1_name">贵州红酸汤</div>
+      <div class="proj-period" data-t="p1_period">2022 — 2023 · 下厨房</div>
+
+      <div class="proj-insight"><p data-t="p1_insight">很多人说想"吃得健康"，但真正需要的，可能只是<span class="hi">一个更简单、更不需要纠结的选择</span>。</p></div>
+
+      <div class="decisions">
+        <div class="decision"><div class="decision-mark">i.</div><div class="decision-text" data-t="p1_d1"><strong>0添加白砂糖</strong> — 抓取用户对"水煮菜"场景的关注，确立为核心差异化卖点</div></div>
+        <div class="decision"><div class="decision-mark">ii.</div><div class="decision-text" data-t="p1_d2"><strong>小包装规格</strong> — 根据"一人食"场景数据，降低尝鲜门槛</div></div>
+      </div>
+
+      <div class="results-head" data-t="h_results">Results</div>
+      <div class="results">
+        <div class="results-cell"><div class="results-num i">No.1</div><div class="results-label" data-t="p1_r1">小红书品类销量</div></div>
+        <div class="results-cell"><div class="results-num">100k+</div><div class="results-label" data-t="p1_r2">累计售出</div></div>
+        <div class="results-cell"><div class="results-num">5×</div><div class="results-label" data-t="p1_r3">领先第二名</div></div>
+      </div>
+
+      <div class="shots">
+        <div class="shot"><img src="images/p1-shot-1.jpg" alt=""><div class="shot-tag"><span class="lbl" data-t="p1_lbl1">产品详情页</span><span class="val">100k+</span></div></div>
+        <div class="shot"><img src="images/p1-shot-2.jpg" alt=""><div class="shot-tag"><span class="lbl" data-t="p1_lbl2">品类搜索</span><span class="val">#1</span></div></div>
+      </div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p1_tk">好的产品决策，不只是从数据"推导"出来的，而是从数据里<strong>"认出"一个具体的人</strong>。</p></div>
+    </div>
+
+    <div class="div-orn">· · ·</div>
+
+    <!-- 野珍菌汤 -->
+    <div class="project rv">
+      <div class="proj-label">Brand System</div>
+      <div class="proj-name" data-t="p2_name">野珍菌汤 · 视觉体系</div>
+      <div class="proj-period" data-t="p2_period">2022 — 2023 · 下厨房</div>
+
+      <div class="proj-body"><p data-t="p2_body">打造"下厨房"自有品牌调味品矩阵，主导从视觉概念到包装落地的全流程，提升品牌在线上渠道的整体辨识度。</p></div>
+
+      <div class="results-head" data-t="h_results">Results</div>
+      <div class="results">
+        <div class="results-cell"><div class="results-num">4</div><div class="results-label" data-t="p2_r1">SKU 上线</div></div>
+        <div class="results-cell"><div class="results-num i">ongoing</div><div class="results-label" data-t="p2_r2">沿用至今</div></div>
+        <div class="results-cell"><div class="results-num i">extended</div><div class="results-label" data-t="p2_r3">延伸冷冻线</div></div>
+      </div>
+
+      <div class="shots">
+        <div class="shot shot-wide-feature"><img src="images/p2-shot-1.jpg" alt=""></div>
+      </div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p2_tk">从单品包装到系列视觉体系，这套搭建逻辑<strong>适用于任何处于品牌初建期的消费品</strong>。</p></div>
+    </div>
+  </div>
+
+  <div class="pbar"><span class="pn">i.</span><span data-t="ch1_title">产品能力</span><span style="text-align:center">Product</span><span style="text-align:right">2022 — 2023</span></div>
+</section>
+
+<!-- ===== 02 增长能力 ===== -->
+<section class="chapter-wrap">
+  <div class="ch rv" id="c2">
+    <div class="ch-expand">
+      <div class="ch-tag">Chapter Two</div>
+      <div class="ch-meta"><div class="ch-num">ii.</div><div class="ch-title" data-t="ch2_title">增长能力</div></div>
+      <div class="ch-sub" data-t="ch2_sub">深刻理解"流量 × 转化"，<span class="hi">再一一突破</span>。</div>
+      <div class="ch-rule"></div>
+    </div>
+    <div class="ch-mini">
+      <span class="ch-mini-num">ii.</span>
+      <span class="ch-mini-title" data-t="ch2_title">增长能力</span>
+      <span class="ch-mini-sub" data-t="ch2_sub">深刻理解"流量 × 转化"，<span class="hi">再一一突破</span></span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <!-- 天猫 -->
+    <div class="project rv">
+      <div class="proj-label">E-Commerce Operations</div>
+      <div class="proj-name" data-t="p3_name">天猫店铺运营</div>
+      <div class="proj-period" data-t="p3_period">2022 — 2023 · 年度 GMV 超 1000 万</div>
+
+      <div class="proj-insight"><p data-t="p3_insight">店铺缺流量，也缺转化，但更缺的是<span class="hi">把两件事当成一个系统来设计</span>。</p></div>
+
+      <div class="bignum">
+        <div class="bignum-n"><div class="n">10M+</div><div class="l" data-t="p3_bignum_l">年度 GMV</div></div>
+        <div class="bignum-t" data-t="p3_bignum_t">覆盖生鲜、调味品、速食三大品类。核心目标：提升 GMV、客单价、复购率，<strong>同时优化流量结构</strong>，降低对付费推广的依赖。</div>
+      </div>
+
+      <div class="results-head" data-t="h_metrics">Key Metrics</div>
+      <div class="results">
+        <div class="results-cell"><div class="results-num">13→32%</div><div class="results-label" data-t="p3_r1">满减使用率</div></div>
+        <div class="results-cell"><div class="results-num">0.6→14%</div><div class="results-label" data-t="p3_r2">短视频占比</div></div>
+        <div class="results-cell"><div class="results-num">+30%</div><div class="results-label" data-t="p3_r4">客单价提升</div></div>
+      </div>
+
+      <div class="decisions">
+        <div class="decision"><div class="decision-mark">i.</div><div class="decision-text" data-t="p3_d1"><strong>满减策略优化</strong> — 新增凑单专区、优化 SKU 定价、全链路强化心智。客单价提升 30%，连带率 1.5+</div></div>
+        <div class="decision"><div class="decision-mark">ii.</div><div class="decision-text" data-t="p3_d2"><strong>单品调价</strong> — 用新客占比、转化率、加购率变化验证每次调价。单品新客占比 69% → 82%</div></div>
+        <div class="decision"><div class="decision-mark">iii.</div><div class="decision-text" data-t="p3_d3"><strong>短视频从 0 到 1</strong> — 主动开启淘宝短视频测试，验证正反馈后联合 BD 建立快速上传通道，短视频流量占比从 0.6% 提升至 14%</div></div>
+        <div class="decision"><div class="decision-mark">iv.</div><div class="decision-text" data-t="p3_d4"><strong>方法论沉淀</strong> — 针对天猫建立「增长想法池」，以 PDCA 方法论持续验证"数据驱动 + 策略迭代"的运营模式</div></div>
+      </div>
+
+      <div class="shots">
+        <div class="shot"><img src="images/p3-shot-1.jpg" alt=""></div>
+        <div class="shot"><img src="images/p3-shot-2.jpg" alt=""></div>
+        <div class="shot"><img src="images/p3-shot-3.jpg" alt=""></div>
+      </div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p3_tk">增长不是砸钱买流量，是<strong>让每一分钱都花出更高的客单价</strong>。</p></div>
+    </div>
+
+    <div class="div-orn">· · ·</div>
+
+    <!-- 抖音 -->
+    <div class="project rv">
+      <div class="proj-label">Influencer Marketing</div>
+      <div class="proj-name" data-t="p4_name">抖音投放 · 从 0 搭建</div>
+      <div class="proj-period" data-t="p4_period">2021 · 下厨房</div>
+
+      <div class="decisions">
+        <div class="decision"><div class="decision-mark">i.</div><div class="decision-text" data-t="p4_d1"><strong>从 0 到 1 搭建</strong> — 独立完成达人筛选、建联、样品寄送、定向链接申请、数据回收与复盘的全流程闭环</div></div>
+        <div class="decision"><div class="decision-mark">ii.</div><div class="decision-text" data-t="p4_d2"><strong>关键洞察</strong> — 头部达人贡献约 80% 订单，验证了"头部集中"的达人投放模型，沉淀了可复用的达人筛选标准</div></div>
+        <div class="decision"><div class="decision-mark">iii.</div><div class="decision-text" data-t="p4_d3"><strong>SOP 全流程沉淀</strong> — 建立定向链接申请流程、样品寄送 SOP、打款流程、数据回收标准</div></div>
+      </div>
+
+      <div class="results-head" data-t="h_results">Results</div>
+      <div class="results">
+        <div class="results-cell"><div class="results-num i">✓</div><div class="results-label" data-t="p4_r1">验证抖音内容带货模式的可行性</div></div>
+        <div class="results-cell"><div class="results-num i">✓</div><div class="results-label" data-t="p4_r2">沉淀达人筛选标准与费用测算模型</div></div>
+        <div class="results-cell"><div class="results-num i">✓</div><div class="results-label" data-t="p4_r3">为后续规模化投放奠定基础</div></div>
+      </div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p4_tk">从 0 到 1 最重要的不是第一次做得多好，而是<strong>把过程变成可复用的东西沉淀下来</strong>。</p></div>
+    </div>
+
+    <div class="div-orn">· · ·</div>
+
+    <!-- TikTok -->
+    <div class="project rv">
+      <div class="proj-label">Cross-Border E-Commerce</div>
+      <div class="proj-name" data-t="p5_name">TikTok 电商 · 西语市场</div>
+      <div class="proj-period" data-t="p5_period">2025 · Chinauta</div>
+
+      <div class="proj-body"><p data-t="p5_body">选择丝瓜络切入——契合海外用户对"东方手工 + 可持续生活"的兴趣。内容以女性视角讲文化故事。</p></div>
+
+      <table class="dtbl">
+        <thead><tr><th data-t="p5_tblh1">维度</th><th data-t="p5_tblh2">数据</th></tr></thead>
+        <tbody>
+          <tr><td data-t="p5_tbl1a">发布视频</td><td class="hl">15</td></tr>
+          <tr><td data-t="p5_tbl2a">累计点赞</td><td class="hl">615</td></tr>
+          <tr><td data-t="p5_tbl3a">单视频最高点赞</td><td class="hl">207</td></tr>
+        </tbody>
+      </table>
+
+      <div class="shots">
+        <div class="shot"><img src="images/p5-shot-1.jpg" alt=""></div>
+        <div class="shot"><img src="images/p5-shot-2.jpg" alt=""></div>
+      </div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p5_tk">这次验证让我看到：在 TikTok 上做内容（讲故事、建立情感连接）是可以做到的，但<strong>从内容到转化的路径比想象的要长</strong>。</p></div>
+    </div>
+  </div>
+
+  <div class="pbar"><span class="pn">ii.</span><span data-t="ch2_title">增长能力</span><span style="text-align:center">Growth</span><span style="text-align:right">2021 — 2025</span></div>
+</section>
+
+<!-- ===== 03 内容能力 ===== -->
+<section class="chapter-wrap">
+  <div class="ch rv" id="c3">
+    <div class="ch-expand">
+      <div class="ch-tag">Chapter Three</div>
+      <div class="ch-meta"><div class="ch-num">iii.</div><div class="ch-title" data-t="ch3_title">内容能力</div></div>
+      <div class="ch-sub" data-t="ch3_sub">内容的核心，就是<span class="hi">产生共鸣</span>。</div>
+      <div class="ch-rule"></div>
+    </div>
+    <div class="ch-mini">
+      <span class="ch-mini-num">iii.</span>
+      <span class="ch-mini-title" data-t="ch3_title">内容能力</span>
+      <span class="ch-mini-sub" data-t="ch3_sub">内容的核心，就是<span class="hi">产生共鸣</span></span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <!-- 下厨房公众号 -->
+    <div class="project rv">
+      <div class="proj-label">Content Writing</div>
+      <div class="proj-name" data-t="p6_name">下厨房公众号 · 3 年持续输出</div>
+      <div class="proj-period" data-t="p6_period">2023 — 2026 · 432 篇</div>
+
+      <div class="proj-insight"><p data-t="p6_insight">卖货文的本质不是"介绍产品"，而是<span class="hi">"帮用户说服自己"</span>。</p></div>
+
+      <div class="bignum">
+        <div class="bignum-n"><div class="n">432</div><div class="l" data-t="p6_bignum_l">篇文章</div></div>
+        <div class="bignum-t" data-t="p6_bignum_t">3 年持续输出，专注美食卖货文章。<strong>独立完成选题、撰稿、排版全流程。</strong></div>
+      </div>
+
+      <div class="results">
+        <div class="results-cell"><div class="results-num">15k</div><div class="results-label" data-t="p6_r1">平均阅读量</div></div>
+        <div class="results-cell"><div class="results-num">43</div><div class="results-label" data-t="p6_r2">篇阅读 2 万+</div></div>
+        <div class="results-cell"><div class="results-num i">3yr</div><div class="results-label" data-t="p6_r3">持续输出</div></div>
+      </div>
+
+      <div class="shots">
+        <div class="shot"><img src="images/p6-shot-1.jpg" alt=""><div class="shot-tag"><span class="lbl" data-t="p6_lbl1">下厨房</span><span class="val" data-t="p6_val1">主号</span></div></div>
+        <div class="shot"><img src="images/p6-shot-2.jpg" alt=""><div class="shot-tag"><span class="lbl" data-t="p6_lbl2">下厨房商店</span><span class="val" data-t="p6_val2">服务号</span></div></div>
+        <div class="shot"><img src="images/p6-shot-3.jpg" alt=""><div class="shot-tag"><span class="lbl" data-t="p6_lbl3">文章示例</span><span class="val" data-t="p6_val3">三文鱼</span></div></div>
+      </div>
+
+      <!-- 蓝莓案例 -->
+      <div class="case">
+        <div class="case-kicker">Case Study</div>
+        <div class="case-t" data-t="case1_t">"最懂事的水果" — 花香蓝莓</div>
+        <div class="case-d" data-t="case1_d">阅读 4.5 万 · 当日 GMV 2.8 万+</div>
+        <p data-t="case1_p">为什么选"懂事"？蓝莓不用洗不用剥，拿起来就吃。但只说"方便"是说明书。说<strong>"懂事"</strong>，是把产品特征翻译成用户的情感语言。</p>
+      </div>
+
+      <div class="shots">
+        <div class="shot shot-feature">
+          <img src="images/case1-blueberry.jpg" alt="">
+          <div class="shot-tag"><span class="lbl" data-t="case1_lbl">蓝莓推文</span><span class="val" data-t="case1_val">4.5 万 阅读</span></div>
+        </div>
+      </div>
+
+      <table class="dtbl">
+        <thead><tr><th data-t="tbl_h1">段落</th><th data-t="tbl_h2">动作</th><th data-t="tbl_h3">目的</th></tr></thead>
+        <tbody>
+          <tr><td data-t="tbl_1a">开篇</td><td data-t="tbl_1b">"为什么之前不推荐蓝莓"</td><td data-t="tbl_1c">建立真实感</td></tr>
+          <tr><td data-t="tbl_2a">产品</td><td data-t="tbl_2b">花香 · 新品种 L25</td><td data-t="tbl_2c">制造稀缺</td></tr>
+          <tr><td data-t="tbl_3a">产地</td><td data-t="tbl_3b">云南高原 · 露天生长</td><td data-t="tbl_3c">品质信任</td></tr>
+          <tr><td data-t="tbl_4a">价格</td><td class="hl" data-t="tbl_4b">"一盒 ≈ 一杯奶茶钱"</td><td data-t="tbl_4c">化解敏感</td></tr>
+          <tr><td data-t="tbl_5a">供应链</td><td data-t="tbl_5b">"只和一个供应商合作"</td><td data-t="tbl_5c">解决痛点</td></tr>
+          <tr><td data-t="tbl_6a">转化</td><td data-t="tbl_6b">新人券 · 低门槛话术</td><td data-t="tbl_6c">引导下单</td></tr>
+        </tbody>
+      </table>
+
+      <div class="meth">
+        <div class="meth-c"><div class="meth-n">i.</div><div class="meth-t" data-t="meth1">破防</div><div class="meth-d" data-t="meth1d">颠覆原有认知</div></div>
+        <div class="meth-c"><div class="meth-n">ii.</div><div class="meth-t" data-t="meth2">建信</div><div class="meth-d" data-t="meth2d">数据 · 产地 · 供应链</div></div>
+        <div class="meth-c"><div class="meth-n">iii.</div><div class="meth-t" data-t="meth3">给台阶</div><div class="meth-d" data-t="meth3d">价格锚点 + 低门槛</div></div>
+      </div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p6_tk">每篇卖货文章 = 一次微型说服链路，<strong>这套结构在不同品类里反复验证有效</strong>。</p></div>
+    </div>
+
+    <div class="div-orn">· · ·</div>
+
+    <!-- 山巴小红书 -->
+    <div class="project rv">
+      <div class="proj-label">Content Creation</div>
+      <div class="proj-name" data-t="p7_name">山巴 · 小红书冷启动</div>
+      <div class="proj-period" data-t="p7_period">2024 — 2025</div>
+
+      <div class="results">
+        <div class="results-cell"><div class="results-num">108</div><div class="results-label" data-t="p7_r1">篇笔记</div></div>
+        <div class="results-cell"><div class="results-num">11万</div><div class="results-label" data-t="p7_r2">最高曝光</div></div>
+        <div class="results-cell"><div class="results-num">1,624</div><div class="results-label" data-t="p7_r3">最高点赞</div></div>
+        <div class="results-cell"><div class="results-num">1,003</div><div class="results-label" data-t="p7_r4">粉丝</div></div>
+      </div>
+
+      <div class="shots">
+        <div class="shot"><img src="images/p7-shot-1.jpg" alt=""><div class="shot-tag"><span class="lbl" data-t="p7_lbl">山巴主页</span><span class="val">1,003</span></div></div>
+      </div>
+
+      <div class="xhs">
+        <div class="xhs-item"><img src="images/p7-xhs-1.jpg" alt=""></div>
+        <div class="xhs-item"><img src="images/p7-xhs-2.jpg" alt=""></div>
+        <div class="xhs-item"><img src="images/p7-xhs-3.jpg" alt=""></div>
+        <div class="xhs-item"><img src="images/p7-xhs-4.jpg" alt=""></div>
+      </div>
+
+      <div class="case">
+        <div class="case-kicker">Case Study</div>
+        <div class="case-t" data-t="case2_t">爱吃辣椒的人都要感谢墨西哥</div>
+        <div class="case-d" data-t="case2_d">点赞 1,624 · 收藏 452 · 评论 230</div>
+        <p data-t="case2_p">从一盘西班牙辣椒切入，写辣椒经由殖民贸易传入欧洲的历史，<strong>把一个饮食细节变成一个文化钩子</strong>。</p>
+      </div>
+
+      <div class="shots">
+        <div class="shot shot-feature">
+          <img src="images/case2-chili.jpg" alt="">
+          <div class="shot-tag"><span class="lbl" data-t="case2_lbl">评论互动</span><span class="val" data-t="case2_val">230 条</span></div>
+        </div>
+      </div>
+
+      <div class="proj-body"><p data-t="p7_transfer"><strong>能力迁移：</strong>用文化切口打开陌生话题、建立读者共鸣，这套内容逻辑适用于任何需要"冷启动"的品牌或账号。</p></div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p7_tk"><strong>共鸣本身就是流量。</strong></p></div>
+    </div>
+  </div>
+
+  <div class="pbar"><span class="pn">iii.</span><span data-t="ch3_title">内容能力</span><span style="text-align:center">Content</span><span style="text-align:right">2023 — 2026</span></div>
+</section>
+
+<!-- ===== 04 跨文化能力 ===== -->
+<section class="chapter-wrap">
+  <div class="ch rv" id="c4">
+    <div class="ch-expand">
+      <div class="ch-tag">Chapter Four</div>
+      <div class="ch-meta"><div class="ch-num">iv.</div><div class="ch-title" data-t="ch4_title">跨文化能力</div></div>
+      <div class="ch-sub" data-t="ch4_sub">在陌生的语境里<span class="hi">建立连接</span>。</div>
+      <div class="ch-rule"></div>
+    </div>
+    <div class="ch-mini">
+      <span class="ch-mini-num">iv.</span>
+      <span class="ch-mini-title" data-t="ch4_title">跨文化能力</span>
+      <span class="ch-mini-sub" data-t="ch4_sub">在陌生的语境里<span class="hi">建立连接</span></span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="qb rv"><p data-t="ch4_qb">待在边缘不是坏事。正是因为你不完全属于任何一个地方，<em>才能看见别人习以为常、却值得被说出来的东西</em>。</p></div>
+
+    <!-- Una Verba -->
+    <div class="project rv">
+      <div class="proj-label">Community Building</div>
+      <div class="proj-name" data-t="p8_name">Una Verba · 女性社群</div>
+      <div class="proj-period" data-t="p8_period">2024 — 2025 · Barcelona</div>
+
+      <div class="proj-insight"><p data-t="p8_insight">"<span class="hi">如何让这件事情可持续运转？</span>"</p></div>
+
+      <div class="brand">
+        <div class="brand-name">Una Verba</div>
+        <div class="brand-sub">Women's Community · Barcelona</div>
+        <div class="brand-stats">
+          <div><div class="brand-stat-n">18</div><div class="brand-stat-l" data-t="p8_s1">场线下活动</div></div>
+          <div><div class="brand-stat-n">500+</div><div class="brand-stat-l" data-t="p8_s2">累计参与人次</div></div>
+          <div><div class="brand-stat-n">200+</div><div class="brand-stat-l" data-t="p8_s3">WhatsApp 社群</div></div>
+        </div>
+      </div>
+
+      <div class="decisions">
+        <div class="decision"><div class="decision-mark">i.</div><div class="decision-text" data-t="p8_d1"><strong>机制先行</strong> — 制作 SOP 文档与活动模板，让任何成员都能自主发起活动，降低组织门槛</div></div>
+        <div class="decision"><div class="decision-mark">ii.</div><div class="decision-text" data-t="p8_d2"><strong>去中心化落地</strong> — 成员陆续自发组织二手衣物交换、自由舞动工作坊等活动</div></div>
+        <div class="decision"><div class="decision-mark">iii.</div><div class="decision-text" data-t="p8_d3"><strong>从 0 搭建完整闭环</strong> — 从机制设计、活动策划到现场执行，独立负责可持续运转的全套流程</div></div>
+      </div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p8_tk">从 0 搭建垂直社群的完整经验，从机制设计到活动落地，<strong>深度理解海外华人用户在跨文化语境下的真实需求与行为逻辑</strong>。</p></div>
+    </div>
+
+    <div class="div-orn">· · ·</div>
+
+    <!-- Sino Women -->
+    <div class="project rv">
+      <div class="proj-label">Content System</div>
+      <div class="proj-name" data-t="p9_name">Sino Women in Diaspora · 内容平台</div>
+      <div class="proj-period" data-t="p9_period">2024 — 2025 · 网站</div>
+
+      <div class="brand ink">
+        <div class="brand-name">Sino Women in Diaspora</div>
+        <div class="brand-sub">Website · Ongoing</div>
+        <div class="brand-stats">
+          <div><div class="brand-stat-n" style="color:#B8C4A8">54</div><div class="brand-stat-l" data-t="p9_s1">条收录投稿</div></div>
+          <div><div class="brand-stat-n" data-t="p9_s2_n">中英</div><div class="brand-stat-l" data-t="p9_s2_l">双语体系</div></div>
+          <div><div class="brand-stat-n" data-t="p9_s3_n">持续</div><div class="brand-stat-l" data-t="p9_s3_l">更新中</div></div>
+        </div>
+      </div>
+
+      <div class="proj-body">
+        <p data-t="p9_b1">负责内容框架设计、网站文案撰写与活动策划，搭建记录海外华裔女性故事的线上空间。</p>
+        <p data-t="p9_b2">全程以 AI 辅助工作流：网站命名、栏目架构、视觉风格方向，到双语内容处理、文案润色、访谈提纲撰写。</p>
+        <p data-t="p9_b3"><strong>能力迁移：</strong>中英双语内容体系搭建 + AI 辅助内容工作流，可直接应用于面向海外华人群体的品牌内容运营。</p>
+      </div>
+
+      <div class="tk"><div class="tk-label" data-t="h_takeaway">Takeaway</div><p data-t="p9_tk">AI 不只是提效工具，它在<strong>重新划定"一个人能做什么"的边界</strong>。</p></div>
+    </div>
+  </div>
+
+  <div class="pbar"><span class="pn">iv.</span><span data-t="ch4_title">跨文化能力</span><span style="text-align:center">Cross-Cultural</span><span style="text-align:right">2024 — 2025</span></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer rv" id="ft">
+  <div class="footer-small" data-t="ft_small">Colophon</div>
+  <p class="footer-q" data-t="ft_q">
+    看到具体的人，<br>
+    连接具体的人，<br>
+    <em>打动具体的人。</em>
+  </p>
+  <p class="footer-coda" data-t="ft_coda">这是我做每一件事的起点，也是终点。</p>
+  <div class="footer-links">
+    <a href="mailto:zhengjiayi99@hotmail.com">zhengjiayi99@hotmail.com</a>
+    <a href="tel:+8615695292383">+86 156 9529 2383</a>
+    <a href="tel:+34664886414">+34 664 886 414</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
