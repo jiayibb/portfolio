@@ -670,7 +670,7 @@ a,button,.shot,.xhs-item,.decision,.meth-c,.nav-l a{cursor:url("data:image/svg+x
     display:flex !important;
     flex-direction:column;
     min-height:100vh;
-    padding:100px 24px 28px;
+    padding:100px 24px 80px;
     gap:14px;
     justify-content:flex-end;
     background:linear-gradient(to bottom,
