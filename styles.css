@@ -108,6 +108,9 @@ a,button,.shot,.xhs-item,.decision,.meth-c,.nav-l a{cursor:url("data:image/svg+x
   min-height:100vh;
 }
 
+/* 电脑端：hero-cover-mobile 作为普通容器，不影响 flex 流 */
+.hero-cover-mobile{display:contents}
+
 .hero-over{display:flex;align-items:center;gap:14px;margin:0 0 56px}
 .hero-over-line{width:32px;height:1px;background:var(--rule2)}
 .hero-over span{
@@ -455,7 +458,7 @@ a,button,.shot,.xhs-item,.decision,.meth-c,.nav-l a{cursor:url("data:image/svg+x
 
 /* 特写图 · 蓝莓/辣椒 case 主图 */
 .shot.shot-feature{
-  width:100%;max-width:560px;border-radius:10px;
+  width:100%;max-width:400px;border-radius:10px;
 }
 .shot.shot-feature img{width:100%;height:auto;display:block}
 
@@ -637,32 +640,47 @@ a,button,.shot,.xhs-item,.decision,.meth-c,.nav-l a{cursor:url("data:image/svg+x
   .hero-split{
     display:block;min-height:100vh;
     position:relative;grid-template-columns:none;
+    overflow:visible;
   }
   .hero-split-img{
-    position:absolute;inset:0;
+    position:absolute;top:0;left:0;right:0;
     width:100%;height:100vh;min-height:100vh;z-index:1;
   }
   .hero-split-img img{object-position:50% 25%}
 
-  .bubbles{inset:0;z-index:2}
+  /* 气泡：只在第一屏范围内 */
+  .bubbles{top:0;left:0;right:0;bottom:auto;height:100vh;z-index:2}
   .bubble{padding:10px 14px;min-width:80px}
   .bubble-num{font-size:.65rem}
   .bubble-title{font-size:.78rem;margin-bottom:3px}
-  .bubble-desc{font-size:.5rem;max-width:80px}
   .steam{width:60px;height:70px}
 
+  /* 右栏变成普通 block：封面占 100vh、meta 紧跟其后成第二屏 */
   .hero-split-right{
-    position:absolute;left:0;right:0;bottom:0;
-    z-index:3;width:100%;min-height:auto;
+    position:relative;
+    width:100%;min-height:auto;
+    padding:0;
+    z-index:3;
+    background:transparent;
+    display:block;
+  }
+
+  /* 第一屏封面：高度正好 100vh，文字贴底，带白色渐变过渡 */
+  .hero-cover-mobile{
+    display:flex !important;
+    flex-direction:column;
+    min-height:100vh;
     padding:100px 24px 28px;
-    display:flex;flex-direction:column;gap:14px;
+    gap:14px;
+    justify-content:flex-end;
     background:linear-gradient(to bottom,
       rgba(255,255,255,0) 0%,
-      rgba(255,255,255,.75) 35%,
-      rgba(255,255,255,.95) 65%,
+      rgba(255,255,255,0) 50%,
+      rgba(255,255,255,.85) 72%,
+      rgba(255,255,255,.98) 88%,
       rgba(255,255,255,1) 100%);
-    backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
   }
+
   .hero-over{margin:0 0 8px}
   .hero-over span{font-size:.58rem;letter-spacing:.25em;color:var(--txt2)}
   .hero-over-line{background:var(--txt2)}
@@ -673,8 +691,35 @@ a,button,.shot,.xhs-item,.decision,.meth-c,.nav-l a{cursor:url("data:image/svg+x
   .hero-split-name-cn{font-size:1rem;color:var(--txt2);letter-spacing:.2em;margin-top:6px}
   .hero-split-sub{font-size:.95rem;line-height:1.5;margin:6px 0 0}
 
-  /* 手机端隐藏 01/02/03 */
-  .hero-meta{display:none}
+  /* 第二屏：白底 01/02/03 */
+  .hero-meta{
+    background:#fff;
+    padding:48px 24px 56px;
+    margin-top:0;
+    display:flex;flex-direction:column;gap:20px;
+    position:relative;z-index:3;
+  }
+  .hero-meta .hero-sec{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:4px;
+  }
+  .hero-meta .hero-sec-lb{
+    border-right:none;
+    padding-right:0;
+    font-size:.75rem;
+    color:var(--txt3);
+  }
+  .hero-meta .hero-sec-tx{
+    font-size:.85rem;
+    line-height:1.6;
+    color:var(--ink);
+  }
+  .hero-meta .hero-tags-tiny{gap:5px;margin-top:3px}
+  .hero-meta .hero-tags-tiny span{
+    font-size:.65rem;
+    padding:3px 9px;
+  }
 
   /* 其它页面块 */
   .wrap,.ch-expand,.footer,.pbar,.idx{padding-left:24px;padding-right:24px}
@@ -698,7 +743,17 @@ a,button,.shot,.xhs-item,.decision,.meth-c,.nav-l a{cursor:url("data:image/svg+x
   .results-num{font-size:1.9rem}
   .shots{gap:14px}
   .shot{width:140px}
-  .shot.shot-feature,.shot-wide-feature{max-width:100%}
+  .shot.shot-feature{max-width:100%;width:100%}
+  .shot-wide-feature{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 -24px;       /* 让图突破父容器的 24px 内边距、更撑满屏幕 */
+    border-radius:0;      /* 铺满到屏幕边缘时去掉圆角更干净 */
+  }
+  .shot-wide-feature img{
+    width:100%;
+    height:auto;
+  }
   .xhs{grid-template-columns:repeat(2,1fr);max-width:none}
   .meth{grid-template-columns:1fr;gap:10px}
   .brand{padding:44px 24px}

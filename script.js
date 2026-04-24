@@ -2,7 +2,7 @@
 // 郑家依 · 作品集 · 主脚本
 // ============================================================
 
-// ===== 1. Nav 章节高亮 =====
+// ===== 1. Nav 章节高亮（基于 getBoundingClientRect，兼容 sticky）=====
 (function(){
   const sections = ['c1','c2','c3','c4','ft'];
   const links = {};
@@ -12,21 +12,31 @@
   });
 
   function update(){
-    const trigger = window.scrollY + window.innerHeight * 0.35;
-    const firstEl = document.getElementById(sections[0]);
-    if(!firstEl || trigger < firstEl.offsetTop){
-      Object.values(links).forEach(a => a.classList.remove('active'));
-      return;
-    }
-    let current = sections[0];
-    for(const id of sections){
+    const nav = document.getElementById('nav');
+    const navH = nav ? nav.offsetHeight : 60;
+    // 触发点：nav 底部再往下 40% 视口高度处
+    const triggerY = navH + window.innerHeight * 0.4;
+
+    let current = null;
+    // 从下往上找：第一个顶部位置 <= triggerY 的章节就是当前章节
+    for(let i = sections.length - 1; i >= 0; i--){
+      const id = sections[i];
       const el = document.getElementById(id);
-      if(el && el.offsetTop <= trigger) current = id;
+      if(!el) continue;
+      const rect = el.getBoundingClientRect();
+      if(rect.top <= triggerY){
+        current = id;
+        break;
+      }
     }
-    Object.entries(links).forEach(([id,a]) => a.classList.toggle('active', id === current));
+
+    Object.entries(links).forEach(([id, a]) => {
+      a.classList.toggle('active', id === current);
+    });
   }
 
   window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
   window.addEventListener('load', update);
   setTimeout(update, 100);
 })();
@@ -87,8 +97,8 @@ document.addEventListener('mousemove', e => {
   const bubbles = document.querySelector('.bubbles');
   if(!img || !bubbles) return;
 
-  const POT_X_RATIO = 0.50;
-  const POT_Y_RATIO = 0.66;
+  const POT_X_RATIO = 0.70;
+  const POT_Y_RATIO = 0.60;
 
   function update(){
     if(!img.complete || !img.naturalWidth) return;
@@ -143,13 +153,9 @@ const TMAP = {
 
   // ===== Hero =====
   bub1_t: { zh:'产品能力', en:'Product', es:'Producto' },
-  bub1_d: { zh:'从数据里看到<br>一个具体的人', en:'Seeing a real person<br>in the data', es:'Ver a una persona real<br>en los datos' },
   bub2_t: { zh:'增长能力', en:'Growth', es:'Crecimiento' },
-  bub2_d: { zh:'让对的东西<br>出现在对的人面前', en:'Right thing,<br>right person', es:'Lo correcto,<br>a la persona correcta' },
   bub3_t: { zh:'内容能力', en:'Content', es:'Contenido' },
-  bub3_d: { zh:'让人从"不关我事"<br>到"我想要"', en:'From "not my thing"<br>to "I want this"', es:'De "no me interesa"<br>a "lo quiero"' },
   bub4_t: { zh:'跨文化能力', en:'Cross-Cultural', es:'Transcultural' },
-  bub4_d: { zh:'在陌生的语境里<br>建立连接', en:'Building connections<br>in unfamiliar contexts', es:'Conectar en contextos<br>desconocidos' },
 
   hero_title: {
     zh: "HI! I'M <em>Jiayi Zheng</em>",
